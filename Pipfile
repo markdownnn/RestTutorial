@@ -9,8 +9,8 @@ djangorestframework = "3.11.1"
 pygments = "==2.7.3"
 pre-commit = "==2.9.3"
 black = "==20.8b1"
-httpie = "*"
-python-dotenv = "*"
+httpie = "==2.3.0"
+python-dotenv = "==0.15.0"
 
 [dev-packages]
 
