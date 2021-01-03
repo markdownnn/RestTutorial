@@ -33,7 +33,7 @@ class Snippet(models.Model):
         linenos = "table" if self.linenos else False
         options = {"title": self.title} if self.title else {}
         formatter = HtmlFormatter(
-            style=self.style, linenos=lineos, full=True, **options
+            style=self.style, linenos=linenos, full=True, **options
         )
         self.highlighted = highlight(self.code, lexer, formatter)
         super(Snippet, self).save(*args, **kwargs)
